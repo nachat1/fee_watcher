@@ -1,0 +1,23 @@
+﻿<Window x:Class="FeeWatcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BTC手数料" Height="889.026" Width="564.854">
+    <Canvas Margin="0,0,-8,-2">
+
+        <TextBox FontFamily="consolas" Name="LogArea" Text=""  VerticalAlignment="Stretch" TextWrapping="Wrap" Height="503" Canvas.Left="10" Canvas.Top="264" Width="531"/>
+        <TextBlock Name="ScreenTransactionHash" FontSize="8" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Hash" VerticalAlignment="Top" Width="385"/>
+        <TextBlock Name="ScreenFeeBtc" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Fee(BTC)" VerticalAlignment="Top" Width="385" Canvas.Left="10" Canvas.Top="57"/>
+        <TextBlock Name="ScreenFeeJpy" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Fee(円予想)" VerticalAlignment="Top" Width="385" Canvas.Left="10" Canvas.Top="80"/>
+        <TextBlock Name="ScreenFeeSatoshiPerByte" HorizontalAlignment="Left" TextWrapping="Wrap" Text="satoshi/byte" VerticalAlignment="Top" Width="385" Canvas.Left="10" Canvas.Top="103"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Text="手数料" VerticalAlignment="Top" Width="385" Canvas.Left="10" Canvas.Top="27"/>
+
+        <TextBlock x:Name="ScreenSendBtc" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Value(BTC)" VerticalAlignment="Top" Width="385" Canvas.Left="10" Canvas.Top="167"/>
+        <TextBlock x:Name="ScreenSendJpy" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Value(円予想)" VerticalAlignment="Top" Width="385" Canvas.Left="10" Canvas.Top="190"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Text="送信量" VerticalAlignment="Top" Width="385" Canvas.Left="10" Canvas.Top="137"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="385" Canvas.Left="10" Canvas.Top="229"><Run Language="ja-jp" Text="手数料履歴"/><LineBreak/><Run Language="ja-jp"/></TextBlock>
+
+        <Label Content="使用ライブラリ http://dynamicjson.codeplex.com/" Canvas.Left="10" Canvas.Top="785"/>
+        <Label Content="使用ライブラリ http://sta.github.io/websocket-sharp/" Canvas.Left="10" Canvas.Top="813"/>
+        
+    </Canvas>
+</Window>
